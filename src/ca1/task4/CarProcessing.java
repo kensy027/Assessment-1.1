@@ -1,4 +1,7 @@
 package ca1.task4;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Arrays;
 
 public class CarProcessing {
 	public static void main(String[] args) {
@@ -24,7 +27,7 @@ public class CarProcessing {
 	}
 	
 	public Car[] removeDuplicates(Car[] inputArray) {
-		return null;
-	}
-	
+        Set<Car> carSet = new HashSet<>(Arrays.asList(inputArray));
+        return carSet.toArray(new Car[0]);
+    }
 }
